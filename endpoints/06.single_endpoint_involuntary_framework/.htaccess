@@ -1,0 +1,33 @@
+
+
+# Check out https://codex.wordpress.org/htaccess for another example
+
+# This example does not use <IfModule> scoping because if mod_rewrite
+# is not working I want the server to break entirely before it reveals
+# anything I do not want it to
+
+
+# Switch on mod_rewrite
+RewriteEngine On
+
+
+# If the request is to the endpoint directly, leave it alone to avoid getting an infinite
+# rewrite loop
+RewriteCond %{REQUEST_URI} /06\.single_endpoint_involuntary_framework/
+RewriteCond %{REQUEST_URI} !/06\.single_endpoint_involuntary_framework/$
+RewriteCond %{REQUEST_URI} !/06\.single_endpoint_involuntary_framework/index.php$
+
+
+# Leave some directory alone because you usually want to serve
+# some files like JS, CSS and multimedia without the framework getting
+# involved
+RewriteCond %{REQUEST_URI} !/06\.single_endpoint_involuntary_framework/media/?
+
+
+# Do the rewrite where conditions were met
+RewriteRule .* ./index.php [L]
+
+
+# Research starting point:
+# https://www.sitepoint.com/apache-mod_rewrite-examples/
+
