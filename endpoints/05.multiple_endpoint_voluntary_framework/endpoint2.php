@@ -9,9 +9,18 @@ require './myapp_functions.php';
 $input      = "This is endpoint 2 doing its own thing";
 $input     .= my_not_nice_function (" - done back-end 2");
 $output     = "output=".$input;
-$front_end = '<pre>'.htmlspecialchars ($output).'</pre>';
 
 
+ob_start ();
+?>
+
+<pre><?php echo htmlspecialchars ($output); ?></pre>';
+
+<img />
+
+
+<?php
+$front_end = ob_get_clean ();
 
 
 // SCRIPTS MAY DO THIS VOLUNTARILY:
