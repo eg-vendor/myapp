@@ -21,7 +21,7 @@ RewriteCond %{REQUEST_URI} !/06\.single_endpoint_involuntary_framework/index.php
 # Leave some directory alone because you usually want to serve
 # some files like JS, CSS and multimedia without the framework getting
 # involved
-RewriteCond %{REQUEST_URI} !/06\.single_endpoint_involuntary_framework/media/?
+RewriteCond %{REQUEST_URI} !/06\.single_endpoint_involuntary_framework/media/
 
 
 # Do the rewrite where conditions were met
