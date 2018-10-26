@@ -6,4 +6,4 @@
         <li><a href="./endpoint2.php">Endpoint 2</a></li>
       </ul>
     </nav>
-    <small>This navigational product was brought to you by <?php echo htmlspecialchars (__FILE__); ?></small>
+    <small>This navigational product was brought to you by <?php echo htmlspecialchars (__DIR__); ?></small>
