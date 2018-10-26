@@ -11,8 +11,8 @@
 RewriteEngine On
 
 
-# If the request is to the endpoint directly, leave it alone to avoid getting an infinite
-# rewrite loop
+# If the request is to the endpoint directly, leave it alone to avoid getting an
+# infinite rewrite loop (the ! means "NOT" a match)
 RewriteCond %{REQUEST_URI} /06\.single_endpoint_involuntary_framework/
 RewriteCond %{REQUEST_URI} !/06\.single_endpoint_involuntary_framework/$
 RewriteCond %{REQUEST_URI} !/06\.single_endpoint_involuntary_framework/index.php$
