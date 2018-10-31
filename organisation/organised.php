@@ -36,9 +36,12 @@ else {
   
   <body>
 
+    <h2>Organised</h2>
+
     <nav>
       <ul>
-        <li><a href="./organised.php">PDO test</a></li>
+        <li><a href="./organised.php">Organised</a></li>
+        <li><a href="./not_organised.php">Not organised</a></li>
       </ul>
     </nav>
 

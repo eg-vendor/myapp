@@ -37,13 +37,12 @@ else {
   
   <body>
 
+    <h2>Not organised</h2>
+
     <nav>
       <ul>
-        <li><a href="./pdo_test.php">PDO test</a></li>
-        <li><a href="./pdo_test2.php">PDO test with binding</a></li>
-        <li><a href="./pdo_test3.php">PDO test returning only associative array</a></li>
-        <li><a href="./pdo_test4.php">Read input from $_GET</a></li>
-        <li><a href="./pdo_test5.php">Read input from $_POST</a></li>
+        <li><a href="./organised.php">Organised</a></li>
+        <li><a href="./not_organised.php">Not organised</a></li>
       </ul>
     </nav>
 
