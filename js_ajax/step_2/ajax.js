@@ -18,7 +18,7 @@ function ajaxGet (timeout,url) {
     console.log ('ajaxGet() returning promise');
     return new Promise (
         function (succeeded,failed) {
-            if (0==0) {
+            if (0==1) {
                 succeeded ('Hooray!');
             }
             else {
