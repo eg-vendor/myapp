@@ -12,6 +12,7 @@ CREATE TABLE `myapp_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `myapp_user` (`user_Email`, `user_Display_Name`) VALUES
-('testuser@no.where',	'Mel & Sue');
+('testuser1@no.where',	'Mel & Sue'),
+('testuser2@no.where',  'Bob Too');
 
 -- 2018-09-11 10:12:55
